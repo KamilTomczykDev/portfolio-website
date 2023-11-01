@@ -1,48 +1,48 @@
-import React from "react";
-import { FaBars, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
-import Logo from "../assets/logo1.png";
 import { useState } from "react";
+import Logo from "../assets/logo1.png";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsNavOpen(!isNavOpen);
+  };
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-stone-900 text-gray-300">
-      <div>
-        <img src={Logo} alt="Logo" className="w-[50px]" />
+    //border-b border-[#ffb545]
+    <>
+      <div className="fixed z-10 flex h-[80px] w-full items-center justify-between px-4">
+        <img className="h-[50px]" src={Logo} alt="Logo" />
+        <ul className="hidden text-xl text-white md:flex lg:text-3xl">
+          <li>Home</li>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Work</li>
+          <li className="font-semibold text-black hover:drop-shadow-[4px_4px_0_white] 2xl:font-bold">
+            Contact
+          </li>
+        </ul>
+        <div
+          onClick={handleClick}
+          className="hover:drop-shadow-[4px_4px_0_black] md:hidden"
+        >
+          {!isNavOpen ? (
+            <FaBars size={30} color={"white"} />
+          ) : (
+            <FaTimes size={30} color={"white"} />
+          )}
+        </div>
       </div>
-
-      {/* menu */}
-      <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
-      </ul>
-
-      {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
-      </div>
-      {/* Mobile menu */}
-      <ul
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-stone-900 flex flex-col justify-center items-center"
-        }
-      >
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">About</li>
-        <li className="py-6 text-4xl">Skills</li>
-        <li className="py-6 text-4xl">Work</li>
-        <li className="py-6 text-4xl">Contact</li>
-      </ul>
-
-      {/* socials */}
-      <div className="flex fixed flex-col top-[35%] left-0"></div>
-    </div>
+      {isNavOpen && (
+        <ul className="absolute left-0 top-0 flex h-screen w-full flex-col items-start justify-center space-y-7 bg-[#f39404] text-4xl text-white md:hidden">
+          <li>Home</li>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Work</li>
+          <li>Contact</li>
+        </ul>
+      )}
+    </>
   );
 }
 

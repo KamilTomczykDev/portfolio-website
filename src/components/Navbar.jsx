@@ -11,7 +11,7 @@ function Navbar() {
   return (
     //border-b border-[#ffb545]
     <>
-      <div className="absolute z-20 flex h-[80px] w-full items-center justify-between px-4">
+      <div className="fixed z-20 flex h-[80px] w-full items-center justify-between px-4">
         <img className="h-[50px]" src={Logo} alt="Logo" />
         <ul className="hidden text-xl text-white md:flex lg:text-3xl">
           <li>Home</li>
@@ -34,7 +34,7 @@ function Navbar() {
         </div>
       </div>
       {isNavOpen && (
-        <ul className="absolute left-0 top-0 z-10 flex h-screen w-full flex-col items-start justify-center space-y-7 bg-[#f39404] text-4xl text-white md:hidden">
+        <ul className="fixed left-0 top-0 z-10 flex h-screen w-full flex-col items-start justify-center space-y-7 bg-[#f39404] text-4xl text-white md:hidden">
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>

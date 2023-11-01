@@ -11,17 +11,17 @@ function Navbar() {
   return (
     //border-b border-[#ffb545]
     <>
-      <div className="fixed z-10 flex h-[80px] w-full items-center justify-between px-4">
+      <div className="absolute z-20 flex h-[80px] w-full items-center justify-between px-4">
         <img className="h-[50px]" src={Logo} alt="Logo" />
         <ul className="hidden text-xl text-white md:flex lg:text-3xl">
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
           <li>Work</li>
-          <li className="font-semibold text-black hover:drop-shadow-[4px_4px_0_white] 2xl:font-bold">
-            Contact
-          </li>
         </ul>
+        <button className="hidden border-4 border-black bg-white px-3 py-2 text-2xl font-semibold text-black drop-shadow-[4px_4px_0_black] hover:bg-black hover:text-white hover:drop-shadow-[4px_4px_0_white] md:block 2xl:font-bold">
+          Contact
+        </button>
         <div
           onClick={handleClick}
           className="hover:drop-shadow-[4px_4px_0_black] md:hidden"
@@ -34,7 +34,7 @@ function Navbar() {
         </div>
       </div>
       {isNavOpen && (
-        <ul className="absolute left-0 top-0 flex h-screen w-full flex-col items-start justify-center space-y-7 bg-[#f39404] text-4xl text-white md:hidden">
+        <ul className="absolute left-0 top-0 z-10 flex h-screen w-full flex-col items-start justify-center space-y-7 bg-[#f39404] text-4xl text-white md:hidden">
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>

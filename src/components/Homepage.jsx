@@ -1,3 +1,4 @@
+import About from "./About";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 
@@ -6,6 +7,7 @@ function Homepage() {
     <>
       <Navbar />
       <Hero />
+      <About />
     </>
   );
 }

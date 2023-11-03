@@ -8,19 +8,7 @@ export const projects = [
     code: "https://github.com/kamiltomczykdev",
   },
   {
-    name: "Systemix.com.pl",
-    img: SYSTEMIX_IMG,
-    liveDemoUrl: "https://systemix.com.pl",
-    code: "https://github.com/kamiltomczykdev",
-  },
-  {
-    name: "Systemix.com.pl",
-    img: SYSTEMIX_IMG,
-    liveDemoUrl: "https://systemix.com.pl",
-    code: "https://github.com/kamiltomczykdev",
-  },
-  {
-    name: "Systemix.com.pl",
+    name: "Draw or Attack",
     img: SYSTEMIX_IMG,
     liveDemoUrl: "https://systemix.com.pl",
     code: "https://github.com/kamiltomczykdev",

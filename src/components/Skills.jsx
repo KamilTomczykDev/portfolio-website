@@ -14,7 +14,7 @@ function Skills() {
             </p>
           </div>
           <div>
-            <p className="mb-4 ml-4 text-xl text-white sm:ml-0">
+            <p className="mb-4 ml-4 text-2xl text-white sm:ml-0">
               Technologies I've worked with.
             </p>
           </div>
@@ -23,7 +23,7 @@ function Skills() {
               <SkillsItem skill={skill} key={skill.name} />
             ))}
           </div>
-          <div className="mt-10 pl-4 text-xl text-white sm:pl-0">
+          <div className="mt-10 pl-4 text-2xl text-white sm:pl-0">
             <p>
               Next move is to learn{" "}
               <span className="font-bold text-[#f39404]">Docker</span> and{" "}

@@ -12,13 +12,13 @@ function Hero() {
           <h2 className="mt-1 text-4xl font-bold underline decoration-white decoration-solid sm:text-5xl lg:text-6xl 2xl:text-7xl">
             I'm <span className="">Front-End Developer</span>
           </h2>
-          <p className="md:text-md mt-3 max-w-[500px] text-sm text-white md:text-xl">
+          <p className="text-md mt-3 max-w-[550px] text-white xl:text-2xl">
             I'm specializing in building (and occasionally designing) responsive
             front-end web applications. My main goal is to create apps easy to
             use and easy to look at.
           </p>
           <div>
-            <button className="text-md static mx-2 my-5 max-w-[160px] border-4 border-black bg-white px-3 py-2 font-bold drop-shadow-[4px_4px_0_black] hover:border-white hover:bg-black hover:text-white hover:drop-shadow-[4px_4px_0_white] md:px-4 md:py-3  md:text-xl">
+            <button className="text-md drop-shadow-3xl static mx-2 my-5 max-w-[160px] border-4 border-black bg-white px-3 py-2 font-bold hover:border-white hover:bg-black hover:text-white hover:drop-shadow-2xl md:px-4 md:py-3  md:text-xl">
               View work
             </button>
           </div>

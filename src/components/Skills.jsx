@@ -5,31 +5,30 @@ import SkillsItem from "./SkillsItem";
 function Skills() {
   console.log(technologies);
   return (
-    <div name="skills" className=" w-full bg-black text-[#f39404]">
+    <div name="skills" className="w-full bg-black text-[#f39404]">
       <div className="flex min-h-[100vh] w-full items-center justify-center">
-        <div className="flex h-full w-full flex-col justify-center gap-10 pl-4  sm:items-center">
+        <div className="my-[75px] flex h-full w-full flex-col justify-center gap-10 sm:items-center">
           <div>
-            <p className="inline border-b-4 border-white text-4xl font-bold">
+            <p className="ml-4 inline border-b-4 border-white text-4xl font-bold  sm:ml-0">
               Experience
             </p>
           </div>
           <div>
-            <li className="mb-4 text-xl text-white">
+            <p className="mb-4 ml-4 text-xl text-white sm:ml-0">
               Technologies I've worked with.
-            </li>
+            </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-10 lg:flex-nowrap">
+          <div className="flex flex-wrap flex-wrap justify-center gap-10">
             {technologies.map((skill) => (
               <SkillsItem skill={skill} key={skill.name} />
             ))}
           </div>
-          <div className="mt-10">
-            <li className="mb-4 text-xl text-white">Currently learning.</li>
-          </div>
-          <div className="flex flex-wrap justify-center gap-10 lg:flex-nowrap">
-            {newTechnologies.map((skill) => (
-              <SkillsItem skill={skill} key={skill.name} />
-            ))}
+          <div className="mt-10 pl-4 text-xl text-white sm:pl-0">
+            <p>
+              Next move is to learn{" "}
+              <span className="font-bold text-[#f39404]">Docker</span> and{" "}
+              <span className="font-bold text-[#f39404]">Linux</span>
+            </p>
           </div>
         </div>
       </div>

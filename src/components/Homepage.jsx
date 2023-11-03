@@ -1,6 +1,7 @@
 import About from "./About";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import Projects from "./Projects";
 import Skills from "./Skills";
 
 function Homepage() {
@@ -10,6 +11,7 @@ function Homepage() {
       <Hero />
       <About />
       <Skills />
+      <Projects />
     </>
   );
 }

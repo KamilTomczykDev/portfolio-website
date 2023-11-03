@@ -18,3 +18,7 @@
     @apply hover:drop-shadow-[4px_4px_0_black];
   }
 }
+
+.shadow-black {
+  box-shadow: 4px 4px 0 0 black;
+}

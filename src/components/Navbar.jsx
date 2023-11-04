@@ -19,7 +19,7 @@ function Navbar() {
           <li>Skills</li>
           <li>Work</li>
         </ul>
-        <button className="drop-shadow-3xl hidden border-4 border-black bg-white px-3 py-2 text-2xl font-semibold text-black hover:bg-black hover:text-white hover:drop-shadow-2xl md:block 2xl:font-bold">
+        <button className="drop-shadow-3xl hidden bg-white px-3 py-2 text-2xl font-semibold text-black hover:bg-black hover:text-white hover:drop-shadow-2xl md:block 2xl:font-bold">
           Contact
         </button>
         <div onClick={handleClick} className="hover:drop-shadow-3xl md:hidden">

@@ -18,7 +18,7 @@ function Hero() {
             use and easy to look at.
           </p>
           <div>
-            <button className="text-md drop-shadow-3xl static mx-2 my-5 max-w-[160px] border-4 border-black bg-white px-3 py-2 font-bold hover:border-white hover:bg-black hover:text-white hover:drop-shadow-2xl md:px-4 md:py-3  md:text-xl">
+            <button className="text-md drop-shadow-3xl static mx-2 my-5 max-w-[160px] bg-white px-3 py-2 font-bold hover:border-white hover:bg-black hover:text-white hover:drop-shadow-2xl md:px-4 md:py-3  md:text-xl">
               View work
             </button>
           </div>

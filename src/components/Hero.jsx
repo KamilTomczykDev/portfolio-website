@@ -2,7 +2,7 @@ import HeaderImg from "../assets/header-image.png";
 
 function Hero() {
   return (
-    <div>
+    <div name="home">
       <div className="flex h-screen flex-col bg-[#f39404] md:flex-row md:items-center md:justify-between">
         <div className="w-max[1000px] mt-[80px] flex h-full flex-col  justify-center px-5 md:ml-[35px] md:justify-center xl:ml-[100px]">
           <p className="text-sm text-white md:text-2xl">Hi, my name is</p>
@@ -18,7 +18,7 @@ function Hero() {
             use and easy to look at.
           </p>
           <div>
-            <button className="text-md drop-shadow-3xl static mx-2 my-5 max-w-[160px] bg-white px-3 py-2 font-bold hover:border-white hover:bg-black hover:text-white hover:drop-shadow-2xl md:px-4 md:py-3  md:text-xl">
+            <button className="text-md static mx-2 my-5 max-w-[160px] bg-white px-3 py-2 font-bold drop-shadow-3xl hover:border-white hover:bg-black hover:text-white hover:drop-shadow-2xl md:px-4 md:py-3  md:text-xl">
               View work
             </button>
           </div>

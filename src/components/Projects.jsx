@@ -3,7 +3,7 @@ import ProjectsItem from "./ProjectsItem";
 
 function Projects() {
   return (
-    <div name="skills" className="w-full bg-[#f39404] text-black">
+    <div name="projects" className="w-full bg-[#f39404] text-black">
       <div className="flex min-h-[100vh] w-full items-center justify-center">
         <div className="my-[75px] flex h-full w-full flex-col justify-center gap-10 sm:items-center">
           <div>

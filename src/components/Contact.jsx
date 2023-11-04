@@ -15,30 +15,30 @@ function Contact() {
           </p>
           <p className="py-4 text-2xl text-black">
             Submit the from below or shoot me an email -
-            <span className="text-wrap font-semibold text-[#f39404]">
+            <span className="break-words font-semibold text-[#f39404]">
               kamiltomczyk.dev@gmail.com
             </span>
           </p>
         </div>
         <input
           type="text"
-          className="drop-shadow-5xl bg-black p-2 text-white"
+          className="bg-black p-2 text-white drop-shadow-5xl"
           placeholder="Name"
           name="name"
         />
         <input
-          className="drop-shadow-5xl my-4 bg-black p-2 text-white"
+          className="my-4 bg-black p-2 text-white drop-shadow-5xl"
           type="email"
           placeholder="Email"
           name="email"
         />
         <textarea
           name="message"
-          className="drop-shadow-5xl bg-black p-2 text-white"
+          className="bg-black p-2 text-white drop-shadow-5xl"
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="drop-shadow-3xl mx-auto my-8 flex bg-[#f39404] px-4 py-3 font-semibold text-black">
+        <button className="mx-auto my-8 flex bg-[#f39404] px-4 py-3 text-2xl font-semibold text-black drop-shadow-3xl">
           Let's collaborate
         </button>
       </form>

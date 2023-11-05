@@ -37,7 +37,7 @@ function Navbar() {
           </li>
         </ul>
         <Link to="contact" smooth={true} duration={500}>
-          <button className="hidden bg-white px-3 py-2 text-2xl font-semibold text-black drop-shadow-3xl hover:bg-black hover:text-white hover:drop-shadow-2xl md:block 2xl:font-bold">
+          <button className="hidden bg-white px-3 py-2 text-2xl font-semibold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-white hover:drop-shadow-2xl md:block 2xl:font-bold">
             Contact
           </button>
         </Link>

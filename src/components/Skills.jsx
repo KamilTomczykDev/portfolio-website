@@ -5,7 +5,7 @@ import SkillsItem from "./SkillsItem";
 function Skills() {
   console.log(technologies);
   return (
-    <div name="skills" className="w-full bg-black text-[#f39404]">
+    <div name="skills" className="w-full bg-stone-900 text-[#f39404]">
       <div className="flex min-h-[100vh] w-full items-center justify-center">
         <div className="my-[75px] flex h-full w-full flex-col justify-center gap-10 sm:items-center">
           <div>

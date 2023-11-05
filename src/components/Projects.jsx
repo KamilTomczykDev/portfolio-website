@@ -1,5 +1,7 @@
 import { projects } from "../data/projects";
 import ProjectsItem from "./ProjectsItem";
+import Fade from "react-reveal/Fade";
+import Reveal from "react-reveal/Reveal";
 
 function Projects() {
   return (
@@ -7,7 +9,7 @@ function Projects() {
       <div className="flex min-h-[100vh] w-full items-center justify-center">
         <div className="my-[75px] flex h-full w-full flex-col justify-center gap-10 sm:items-center">
           <div>
-            <p className="ml-4 inline border-b-4 border-white text-4xl font-bold  sm:ml-0">
+            <p className="ml-4 inline border-b-4 border-white text-4xl font-bold text-stone-900 sm:ml-0">
               Projects
             </p>
           </div>
@@ -16,6 +18,7 @@ function Projects() {
               Check out some of my recent work.
             </p>
           </div>
+
           <div className="flex flex-wrap items-center justify-center gap-[100px]">
             {projects.map((project) => (
               <ProjectsItem project={project} />

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       dropShadow: {
-        "3xl": "4px 4px 0 black",
+        "3xl": "4px 4px 0 #1c1917",
         "2xl": "4px 4px 0 white",
         "5xl": "4px 4px 0 #f39404",
         "4xl": [

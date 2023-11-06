@@ -2,7 +2,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="flex h-screen w-full items-center justify-center bg-white p-4"
+      className="flex min-h-[100vh] w-full items-center justify-center bg-white px-4 py-10"
     >
       <form
         action="https://getform.io/f/4fb75a18-8e7a-4f54-a498-2e21b58fc13c"

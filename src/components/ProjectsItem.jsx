@@ -10,7 +10,7 @@ function ProjectsItem({ project }) {
       <div className="drop-shadow-3xl">
         <div className="border-[10px] border-white">
           <img
-            className="grayscale hover:grayscale-0"
+            // className="grayscale hover:grayscale-0"
             src={project.img}
             alt="Screenshot of a project"
           />
@@ -26,12 +26,16 @@ function ProjectsItem({ project }) {
       </div>
       {/* buttons container */}
       <div className="flex w-full gap-8 ">
-        <button className="w-full bg-white px-3 py-2 text-2xl font-semibold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-white hover:drop-shadow-2xl 2xl:font-bold">
-          Demo
-        </button>
-        <button className="w-full bg-white px-3 py-2 text-2xl font-semibold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-white hover:drop-shadow-2xl 2xl:font-bold">
-          Code
-        </button>
+        <a className="w-full" href={project.liveDemoUrl}>
+          <button className="w-full bg-white px-3 py-2 text-2xl font-semibold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-white hover:drop-shadow-2xl 2xl:font-bold">
+            Demo
+          </button>
+        </a>
+        <a className="w-full" href={project.codeUrl}>
+          <button className="w-full bg-white px-3 py-2 text-2xl font-semibold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-white hover:drop-shadow-2xl 2xl:font-bold">
+            Code
+          </button>
+        </a>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="flex min-h-[100vh] w-full items-center justify-center bg-white px-4 py-10"
+      className="flex min-h-[100vh] w-full items-center justify-center bg-white px-4 py-[100px]"
     >
       <form
         action="https://getform.io/f/4fb75a18-8e7a-4f54-a498-2e21b58fc13c"
@@ -38,7 +38,7 @@ function Contact() {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="mx-auto my-8 flex bg-[#f39404] px-4 py-3 text-2xl font-semibold text-stone-900 drop-shadow-3xl">
+        <button className="mx-auto my-8 flex bg-[#f39404] px-4 py-3 text-2xl font-semibold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-[#f39404] hover:drop-shadow-5xl">
           Let's collaborate
         </button>
       </form>

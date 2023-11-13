@@ -40,9 +40,10 @@ function Hero() {
             use and easy to look at.
           </p>
           <div>
-            <Link to="projects" smooth={true} duration={500}>
+            <Link className="" to="projects" smooth={true} duration={500}>
               <button
-                className={`text-md static mx-2 my-5 max-w-[160px] bg-white px-3 py-2 font-bold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-white hover:drop-shadow-2xl md:px-4 md:py-3 md:text-xl transition duration-1000 delay-[2s] ${
+                ref={ref}
+                className={`text-md static mx-2 my-5 max-w-[160px] bg-white px-3 py-2 font-bold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-white hover:drop-shadow-2xl md:px-4 md:py-3 md:text-xl transition duration-1000 ${
                   inView ? "" : "translate-y-6 opacity-0"
                 }`}
               >

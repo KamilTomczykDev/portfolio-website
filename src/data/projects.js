@@ -15,7 +15,7 @@ export const projects = [
   {
     name: "Draw or Attack",
     img: DRAWORATTACK_IMG,
-    liveDemoUrl: "https://github.com/KamilTomczykDev/drawOrAttack",
+    liveDemoUrl: "https://fastidious-cocada-daa60a.netlify.app",
     codeUrl: "https://github.com/KamilTomczykDev/drawOrAttack",
     url: "draworattack",
     description:

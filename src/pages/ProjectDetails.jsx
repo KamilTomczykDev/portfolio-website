@@ -2,12 +2,13 @@ import { useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 import ProjectNavBar from "../components/ProjectNavBar";
 import { useEffect } from "react";
+import Footer from "../components/Footer";
 
 function ProjectDetails() {
   const { id } = useParams();
 
   const currentProject = projects.filter((obj) =>
-    Object.values(obj).some((val) => val.includes(id)),
+    Object.values(obj).some((val) => val.includes(id))
   );
 
   const [{ name, description, used, liveDemoUrl, codeUrl, img }] =
@@ -52,6 +53,7 @@ function ProjectDetails() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

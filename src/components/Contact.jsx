@@ -1,13 +1,21 @@
+import { useInView } from "react-intersection-observer";
+
 function Contact() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
   return (
     <div
       name="contact"
       className="flex min-h-[100vh] w-full items-center justify-center bg-white px-4 py-[100px]"
     >
       <form
+        ref={ref}
         action="https://getform.io/f/4fb75a18-8e7a-4f54-a498-2e21b58fc13c"
         method="POST"
-        className="flex w-full max-w-[600px] flex-col "
+        className={`flex w-full max-w-[600px] flex-col transition duration-1000 ${
+          inView ? "" : "translate-y-6 opacity-0"
+        }`}
       >
         <div className="pb-8">
           <p className="inline border-b-4 border-[#f39404] text-4xl font-bold text-stone-900">
@@ -47,5 +55,3 @@ function Contact() {
 }
 
 export default Contact;
-
-

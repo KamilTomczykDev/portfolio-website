@@ -1,11 +1,21 @@
 import { projects } from "../data/projects";
 import ProjectsItem from "./ProjectsItem";
+import { useInView } from "react-intersection-observer";
 
 function Projects() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+
   return (
     <div name="projects" className="w-full bg-[#f39404] text-black">
       <div className="flex min-h-[100vh] w-full items-center justify-center">
-        <div className="my-[75px] flex h-full w-full flex-col justify-center gap-10 sm:items-center">
+        <div
+          ref={ref}
+          className={`my-[75px] flex h-full w-full flex-col justify-center gap-10 sm:items-center transition duration-1000 ${
+            inView ? "" : "translate-y-6 opacity-0"
+          }`}
+        >
           <div>
             <p className="ml-4 inline border-b-4 border-white text-4xl font-bold text-stone-900 sm:ml-0">
               Projects

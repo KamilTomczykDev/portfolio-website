@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 function ProjectNavBar() {
   const navigate = useNavigate();
   return (
-    <div className="fixed z-20 flex h-[80px] w-full items-center justify-between bg-[#f39404] px-4">
+    <div className="fixed z-20 flex h-[80px] w-full items-center justify-between bg-[#f39304f2] px-4">
       <img className="h-[30px] sm:h-[50px]" src={Logo} alt="Logo" />
       <button
         onClick={() => navigate(-1)}

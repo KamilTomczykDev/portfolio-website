@@ -1,7 +1,5 @@
 import { projects } from "../data/projects";
 import ProjectsItem from "./ProjectsItem";
-import Fade from "react-reveal/Fade";
-import Reveal from "react-reveal/Reveal";
 
 function Projects() {
   return (

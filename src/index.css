@@ -19,6 +19,6 @@
   }
 }
 
-.shadow-black {
-  box-shadow: 4px 4px 0 0 black;
+.header-bg {
+  transition: all 0.5s;
 }

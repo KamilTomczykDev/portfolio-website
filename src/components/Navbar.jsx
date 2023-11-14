@@ -6,26 +6,30 @@ import { Link } from "react-scroll";
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-const [color, setColor] = useState(false);
+  const [color, setColor] = useState(false);
 
   const handleClick = () => {
     setIsNavOpen(!isNavOpen);
   };
 
   const changeColor = () => {
-    if(window.scrollY >= 80) {
-      setColor(true)
+    if (window.scrollY >= 80) {
+      setColor(true);
     } else {
-      setColor(false)
+      setColor(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', changeColor);
+  window.addEventListener("scroll", changeColor);
 
   return (
     //border-b border-[#ffb545]
     <>
-      <div className={`fixed header-bg z-20 flex h-[80px] w-full items-center justify-between ${color ? "bg-[#f39304f2]" : ""} px-4`}>
+      <div
+        className={`fixed header-bg z-20 flex h-[80px] w-full items-center justify-between ${
+          color ? "bg-[#f39304f2]" : ""
+        } px-4`}
+      >
         <img className="h-[50px]" src={Logo} alt="Logo" />
         <ul className="hidden text-xl text-white md:flex lg:text-3xl">
           <li>
@@ -55,7 +59,7 @@ const [color, setColor] = useState(false);
           </button>
         </Link>
 
-        <div onClick={handleClick} className="hover:drop-shadow-3xl md:hidden">
+        <div onClick={handleClick} className="md:hidden">
           {!isNavOpen ? (
             <FaBars size={30} color={"white"} />
           ) : (

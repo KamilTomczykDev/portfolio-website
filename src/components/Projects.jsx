@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 function Projects() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.1,
   });
 
   return (

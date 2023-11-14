@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 function Skills() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
   });
 
   return (

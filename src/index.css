@@ -11,11 +11,7 @@
     @apply font-[Poppins];
   }
   li {
-    @apply px-5;
-    @apply font-medium;
-    @apply 2xl:font-semibold;
-    @apply cursor-pointer;
-    @apply hover:drop-shadow-[4px_4px_0_black];
+    @apply px-5 font-medium cursor-pointer hover:text-stone-900;
   }
 }
 

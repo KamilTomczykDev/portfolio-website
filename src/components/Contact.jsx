@@ -30,19 +30,19 @@ function Contact() {
         </div>
         <input
           type="text"
-          className="bg-stone-900 p-2 text-white drop-shadow-5xl"
+          className="bg-stone-900 p-2 rounded-lg text-white "
           placeholder="Name"
           name="name"
         />
         <input
-          className="my-4 bg-stone-900 p-2 text-white drop-shadow-5xl"
+          className="my-4 bg-stone-900 rounded-lg p-2 text-white"
           type="email"
           placeholder="Email"
           name="email"
         />
         <textarea
           name="message"
-          className="bg-stone-900 p-2 text-white drop-shadow-5xl"
+          className="bg-stone-900 p-2 rounded-lg text-white"
           rows="10"
           placeholder="Message"
         ></textarea>

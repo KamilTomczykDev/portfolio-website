@@ -5,9 +5,9 @@ import { useInView } from "react-intersection-observer";
 function Hero() {
   const { ref, inView } = useInView();
   return (
-    <div name="home">
-      <div className="flex h-screen flex-col bg-[#f39404] md:flex-row md:items-center md:justify-between">
-        <div className="w-max[1000px] mt-[80px] flex h-full flex-col  justify-center px-5 md:ml-[35px] md:justify-center xl:ml-[100px]">
+    <div name="home" className="flex justify-center bg-[#f39404]">
+      <div className="flex h-screen max-w-[1500px] md:flex-row md:items-center md:justify-between">
+        <div className="w-max[1000px] mt-[50px] sm:mt-[80px] flex h-full flex-col gap-4  justify-center px-5 md:ml-[35px] md:justify-center xl:ml-0">
           <p
             ref={ref}
             className={`text-sm text-white md:text-2xl transition duration-1000 delay-250 ${
@@ -16,22 +16,25 @@ function Hero() {
           >
             Hi, my name is
           </p>
-          <h1
-            className={`text-4xl font-bold text-stone-900 sm:text-5xl lg:text-6xl 2xl:text-7xl transition duration-1000 delay-500 ${
-              inView ? "" : "translate-y-6 opacity-0"
-            }`}
-          >
-            Kamil Tomczyk
-          </h1>
-          <h2
-            className={`mt-1 text-4xl font-bold text-stone-900 underline decoration-white decoration-solid sm:text-5xl lg:text-6xl 2xl:text-7xl transition duration-1000 delay-1000 ${
-              inView ? "" : "translate-y-6 opacity-0"
-            }`}
-          >
-            I'm Front-End Developer
-          </h2>
+          <div>
+            <h1
+              className={`text-4xl font-bold text-stone-900 sm:text-5xl lg:text-6xl 2xl:text-7xl transition duration-1000 delay-500 ${
+                inView ? "" : "translate-y-6 opacity-0"
+              }`}
+            >
+              Kamil Tomczyk
+            </h1>
+            <h2
+              className={`mt-1 text-4xl font-bold text-stone-900 underline decoration-white decoration-solid sm:text-5xl lg:text-6xl 2xl:text-7xl transition duration-1000 delay-1000 ${
+                inView ? "" : "translate-y-6 opacity-0"
+              }`}
+            >
+              I'm Front-End Developer
+            </h2>
+          </div>
+
           <p
-            className={`text-md mt-3 max-w-[550px] text-white xl:text-xl transition duration-1000 delay-[1.5s] ${
+            className={`text-md mt-3 max-w-[550px] text-white xl:text-xl xl:leading-7 transition duration-1000 delay-[1.5s] ${
               inView ? "" : "translate-y-6 opacity-0"
             }`}
           >
@@ -53,7 +56,7 @@ function Hero() {
           </div>
         </div>
         <img
-          className="hidden w-[40%] max-w-[600px] px-5 md:block 2xl:mr-[100px]"
+          className="hidden w-[40%] max-w-[450px] px-5 md:block"
           src={HeaderImg}
           alt="Header illustration"
         />

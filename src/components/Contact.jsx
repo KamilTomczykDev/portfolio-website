@@ -46,7 +46,7 @@ function Contact() {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="mx-auto my-8 flex bg-[#f39404] px-4 py-3 text-2xl font-semibold text-stone-900 drop-shadow-3xl hover:bg-stone-900 hover:text-[#f39404] hover:drop-shadow-5xl">
+        <button className="my-8 mx-auto px-4 py-2 text-lg rounded-lg font-semibold hover:bg-stone-800 hover:text-stone-200  text-stone-800 border-[3px] border-stone-800">
           Let's collaborate
         </button>
       </form>

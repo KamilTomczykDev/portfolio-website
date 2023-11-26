@@ -32,7 +32,7 @@ function Navbar() {
         }`}
       >
         <div
-          className={`flex h-[50px] sm:h-[80px] w-full items-center max-w-[1500px] justify-between  px-4`}
+          className={`flex h-[50px] sm:h-[80px] w-full items-center max-w-[1500px] justify-between px-4`}
         >
           <img className="h-[30px] sm:h-[50px] sm:ml-4" src={Logo} alt="Logo" />
           <ul className="hidden text-xl text-white md:flex items-center">
@@ -58,7 +58,7 @@ function Navbar() {
             </li>
             <li>
               <Link to="contact" smooth={true} duration={500}>
-                <Button>Contact</Button>
+                <Button type="primary">Contact</Button>
               </Link>
             </li>
           </ul>

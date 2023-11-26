@@ -9,10 +9,10 @@ function Projects() {
 
   return (
     <div name="projects" className="w-full bg-[#f39404] text-black">
-      <div className="flex min-h-[100vh] w-full items-center justify-center">
+      <div className="flex py-[80px] lg:py-[200px] w-full items-center justify-center">
         <div
           ref={ref}
-          className={`my-[75px] flex h-full w-full flex-col justify-center gap-10 sm:items-center transition duration-1000 ${
+          className={`flex h-full w-full flex-col justify-center gap-10 sm:items-center transition duration-1000 ${
             inView ? "" : "translate-y-6 opacity-0"
           }`}
         >

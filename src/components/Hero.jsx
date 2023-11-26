@@ -7,8 +7,8 @@ function Hero() {
   const { ref, inView } = useInView();
   return (
     <div name="home" className="flex justify-center bg-[#f39404]">
-      <div className="flex h-screen max-w-[1500px] md:flex-row md:items-center md:justify-between">
-        <div className="w-max[1000px] flex h-full flex-col gap-4  justify-center px-5 md:ml-[35px] md:justify-center xl:ml-0">
+      <div className="flex h-screen w-full max-w-[1500px] md:flex-row md:items-center md:justify-between px-4 sm:pl-8 md:pl-0 md:gap-[50px]">
+        <div className="w-max[800px] flex h-full flex-col gap-4  justify-center md:ml-[35px] md:justify-center">
           <p
             ref={ref}
             className={`text-md text-white xl:text-xl transition duration-500 delay-250 ${
@@ -50,12 +50,10 @@ function Hero() {
             }`}
           >
             <Link to="contact" smooth={true} duration={1000}>
-              <Button>Contact</Button>
+              <Button type="primary">Contact</Button>
             </Link>
             <Link className="" to="projects" smooth={true} duration={500}>
-              <button className=" px-4 py-2 text-lg rounded-lg font-semibold hover:bg-stone-800 transition duration-300 hover:text-stone-200  text-stone-800 border-[3px] border-stone-800">
-                View work
-              </button>
+              <Button type="secondary">View work</Button>
             </Link>
           </div>
         </div>

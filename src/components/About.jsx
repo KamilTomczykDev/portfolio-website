@@ -2,12 +2,12 @@ import { useInView } from "react-intersection-observer";
 
 function About() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.1,
   });
   return (
     <div name="about" className=" w-full text-black">
       <div
-        className={`flex min-h-[100vh] w-full flex-col items-center py-[100px] justify-center transition duration-1000 ${
+        className={`flex w-full flex-col items-center py-[80px] lg:py-[200px] justify-center transition duration-500 ${
           inView ? "" : "translate-y-6 opacity-0"
         }`}
       >
@@ -28,7 +28,7 @@ function About() {
           </div>
           <div
             ref={ref}
-            className={`text-[18px] text-stone-900 transition duration-1000 delay-500 ${
+            className={`text-[18px] text-stone-900 transition duration-500 delay-500 ${
               inView ? "" : "translate-y-6 opacity-0"
             }`}
           >
